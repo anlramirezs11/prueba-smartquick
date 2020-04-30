@@ -7,23 +7,22 @@
                 <!-- Icon -->
                 <div class="fadeIn first">
                     <img src="../../../assets/image/logo-smart-es.png" id="icon" alt="User Icon" />
-                        <div class="row">
-                            <div class="col-sm">
-                                Ingreso
-                            </div>
-                            <div class="col-sm">
-                                Español
-                            </div>
-
+                    <div class="row">
+                        <div class="col-sm">
+                            Ingreso
                         </div>
-
-                    
+                        <div class="col-sm">
+                            Español
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Login Form -->
                 <form>
-                    <input [(ngModel)]='correo' type="text" id="login"  class="fadeIn second" name="login" placeholder="login">
-                    <input [(ngModel)]='password' type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                    <input [(ngModel)]='correo' type="text" id="login" class="fadeIn second" name="login"
+                        placeholder="login">
+                    <input [(ngModel)]='password' type="text" id="password" class="fadeIn third" name="login"
+                        placeholder="password">
                     <button class="fadeIn fourth btn btn-primary" (click)="ingresarVistas()">Log In</button>
                 </form>
 

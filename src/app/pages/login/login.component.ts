@@ -27,11 +27,16 @@ export class LoginComponent implements OnInit {
 
   ingresarVistas() {
     this.advertencia = this.authServiceService.validarUsuario(this.correo, this.password);
-    this.usuarioEntrante = this.authServiceService.getUsuario(this.correo);
-    if (this.usuarioEntrante) {
-      console.log();
-      this.router.navigate([this.usuarioEntrante.tipoUsuario]);
-    }
+    // Patron Observable: Observer
+    // Patron Redux: El store.subscribe notifica los cambios realizados en el estado.
+    this.authServiceService.usuario$.subscribe((response: any) => {
+      if (response) {
+        this.router.navigate([response.tipoUsuario]);
+      }
+    });
+
+
+
   }
 
 

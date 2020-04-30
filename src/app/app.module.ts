@@ -11,6 +11,7 @@ import { CoodinadorComponent } from './pages/coodinador/coodinador.component';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -20,6 +21,7 @@ import { APP_ROUTING } from './app.routes';
     LoginComponent,
     AdministradorComponent,
     CoodinadorComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

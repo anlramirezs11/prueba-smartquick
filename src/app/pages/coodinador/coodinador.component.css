@@ -1,0 +1,47 @@
+.image {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.background-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.pag-construccion {
+    background: url("https://i.imgur.com/pIHMJKr.jpg") no-repeat center top;
+    background-size: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.text-contruccion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-contruccion h1{
+    font-size: 50px;
+}
+
+.text-contruccion p{
+    font-size: 25px;
+}
