@@ -1,0 +1,36 @@
+<div class="container table-winners">
+    <div class="table-responsive">
+        <table class="table table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Atleta</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Año</th>
+                <th scope="col">fecha</th>
+                <th scope="col">Deporte</th>
+                <th scope="col">Medallas de oro</th>
+                <th scope="col">Medallas de plata</th>
+                <th scope="col">Medallas de bronce</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let winner of this.winners | paginate: { itemsPerPage:12, currentPage: p }">
+                <th> {{winner.athlete}} </th>
+                <th> {{winner.age}} </th>
+                <th> {{winner.country}} </th>
+                <th> {{winner.year}} </th>
+                <th> {{winner.date}} </th>
+                <th> {{winner.sport}} </th>
+                <th> {{winner.gold}} </th>
+                <th> {{winner.silver}} </th>
+                <th> {{winner.bronze}} </th>
+                <th> {{winner.total}} </th>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
+
+</div>
