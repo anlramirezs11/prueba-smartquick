@@ -22,13 +22,14 @@
 
                 <!-- Login Form -->
                 <form>
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
+                    <input [(ngModel)]='correo' type="text" id="login"  class="fadeIn second" name="login" placeholder="login">
+                    <input [(ngModel)]='password' type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                    <button class="fadeIn fourth btn btn-primary" (click)="ingresarVistas()">Log In</button>
                 </form>
 
                 <!-- Remind Passowrd -->
                 <div id="formFooter">
+                    <p>{{advertencia}}</p>
                     <a class="underlineHover" href="#">Forgot Password?</a>
                 </div>
 

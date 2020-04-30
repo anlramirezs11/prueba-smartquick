@@ -6,7 +6,7 @@ import { AdministradorComponent } from './pages/administrador/administrador.comp
 
 const APP_ROUTES: Routes = [
  {path: 'home', component: LoginComponent},
- {path: 'coodinador', component: CoodinadorComponent},
+ {path: 'coordinador', component: CoodinadorComponent},
  {path: 'administrador', component: AdministradorComponent},
  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];

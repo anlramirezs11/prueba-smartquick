@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 // Componenetes
 import { AppComponent } from './app.component';
@@ -11,16 +13,18 @@ import { CoodinadorComponent } from './pages/coodinador/coodinador.component';
 import { APP_ROUTING } from './app.routes';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AdministradorComponent,
-    CoodinadorComponent
+    CoodinadorComponent,
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
