@@ -1,2 +1,9 @@
 <app-header></app-header>
-<app-table></app-table>
+<div class="container nav">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" (click)="verTabla()">Tabla Ganadores</button>
+        <button type="button" class="btn btn-secondary" (click)="verResumen()">Resumen</button>
+    </div>
+</div>
+<app-table *ngIf="this.showTabla == true"></app-table>
+<app-resumen *ngIf="this.showResumen == true"></app-resumen>

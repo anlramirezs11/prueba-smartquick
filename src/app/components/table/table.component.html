@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let winner of this.winners | paginate: { itemsPerPage:12, currentPage: p }">
+            <tr *ngFor="let winner of this.winners | paginate: { itemsPerPage:10, currentPage: p }">
                 <th> {{winner.athlete}} </th>
                 <th> {{winner.age}} </th>
                 <th> {{winner.country}} </th>
@@ -32,5 +32,4 @@
         </table>
     </div>
     <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
-
 </div>

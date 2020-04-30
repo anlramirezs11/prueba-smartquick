@@ -1,0 +1,8 @@
+.nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    justify-content: center;
+}

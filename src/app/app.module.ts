@@ -14,6 +14,7 @@ import { TableComponent } from './components/table/table.component';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
+import { ResumenComponent } from './components/resumen/resumen.component';
 
 
 
@@ -26,6 +27,7 @@ import { APP_ROUTING } from './app.routes';
     CoodinadorComponent,
     HeaderComponent,
     TableComponent,
+    ResumenComponent,
   ],
   imports: [
     BrowserModule,
