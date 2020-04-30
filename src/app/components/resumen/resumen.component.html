@@ -1,1 +1,19 @@
-<p>resumen works!</p>
+<div class=" container table-resumen">
+        <table class="table table-borderless table-sm">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Tipo de Medalla</th>
+                    <th scope="col">Suma total de la catagoría</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let medalla of this.medallas">
+                    <th> <img [src]=medalla.Image class="icon" />
+                    </th>
+                    <th> {{medalla.tipoMedalla}} </th>
+                    <th> {{medalla.acumulado}} </th>
+                </tr>
+            </tbody>
+        </table>
+</div>
